@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1740060703 source:d:\dy\codingers\semester 2\sda\pt.1\tugassda1\mdate.c
+	<stdio.h>
+	<conio.h>
+	"date.h"
+
+315507600 d:\dy\codingers\semester 2\sda\pt.1\tugassda1\date.h
+	"boolean.h"
+
+1739514949 d:\dy\codingers\semester 2\sda\pt.1\tugassda1\boolean.h
+
+1740060873 source:d:\dy\codingers\semester 2\sda\pt.1\tugassda1\date.c
+	<stdio.h>
+	<math.h>
+	"date.h"
+
+1740100657 source:d:\dy\codingers\semester 2\sda\pt.1\modular programming (adt date)-20250211t033502z-001\date.c
+	<stdio.h>
+	<math.h>
+	"date.h"
+
+315507600 d:\dy\codingers\semester 2\sda\pt.1\modular programming (adt date)-20250211t033502z-001\date.h
+	"boolean.h"
+
+1739514949 d:\dy\codingers\semester 2\sda\pt.1\modular programming (adt date)-20250211t033502z-001\boolean.h
+
+1740100736 source:d:\dy\codingers\semester 2\sda\pt.1\modular programming (adt date)-20250211t033502z-001\mdate.c
+	<stdio.h>
+	<conio.h>
+	"date.h"
+
