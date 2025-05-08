@@ -1,0 +1,49 @@
+# Project: Perpuss
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = array_mode.o buku.o dll_mode.o main.o peminjam.o sll_mode.o stack.o utils.o
+LINKOBJ  = array_mode.o buku.o dll_mode.o main.o peminjam.o sll_mode.o stack.o utils.o
+LIBS     = -L"D:/Dev-Cpp/TDM-GCC-64/lib" -L"D:/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Dev-Cpp/TDM-GCC-64/include" -I"D:/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"D:/Dev-Cpp/TDM-GCC-64/include" -I"D:/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = Perpuss.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = D:\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+array_mode.o: array_mode.c
+	$(CC) -c array_mode.c -o array_mode.o $(CFLAGS)
+
+buku.o: buku.c
+	$(CC) -c buku.c -o buku.o $(CFLAGS)
+
+dll_mode.o: dll_mode.c
+	$(CC) -c dll_mode.c -o dll_mode.o $(CFLAGS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+peminjam.o: peminjam.c
+	$(CC) -c peminjam.c -o peminjam.o $(CFLAGS)
+
+sll_mode.o: sll_mode.c
+	$(CC) -c sll_mode.c -o sll_mode.o $(CFLAGS)
+
+stack.o: stack.c
+	$(CC) -c stack.c -o stack.o $(CFLAGS)
+
+utils.o: utils.c
+	$(CC) -c utils.c -o utils.o $(CFLAGS)
